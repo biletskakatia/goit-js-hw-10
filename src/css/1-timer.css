@@ -1,0 +1,86 @@
+@import url('./reset.css');
+body {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 36px;
+    padding-left: 156px;
+    background-color: #fff;
+}
+
+#datetime-picker {
+    width: 196px; 
+    padding: 8px 16px;
+    margin-bottom: 32px;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+#datetime-picker:hover{
+    border: 1px solid #2E2F42;
+}
+#datetime-picker:focus {
+    border-color: #4E75FF;
+} 
+#datetime-picker:disabled {
+    border: 1px solid #808080;
+    color: #808080;
+    cursor: not-allowed;
+}
+button[data-start] {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #4E75FF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+button[data-start]:disabled {
+    background-color: #CFCFCF;
+    color: #989898;
+    cursor: not-allowed;
+}
+
+button[data-start]:not([disabled]):hover {
+    background-color: #6C8CFF;
+}
+.timer {
+    display: flex;
+    gap: 24px;
+    width: 346px;
+    margin-bottom: 20px;
+    
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.page-nav {
+    font-size: 16px;
+    font-weight: 700;
+    color: #007bff;
+    text-decoration: none;
+} 
